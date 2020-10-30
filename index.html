@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- plugin -->
+    <link rel="stylesheet" href="assets/WOW/css/libs/animate.css">
+    <link rel="stylesheet" href="assets/Analog/jsRapClock.css">
+    <!-- plugin -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+
+    <title>plugin</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-4">
+          <div class="wrapper text-center">
+            <h1 class="counter">1,234,567.00</h1>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="wrapper text-center">
+            <h1 class="counter">1,234,567.00</h1>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="wrapper text-center">
+            <h1 class="counter">1,234,567.00</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <section class="wow fadeInDown" data-wow-duration="2s" data-wow-delay="2s">
+        <div class="container">
+          <div class="box"></div>
+        </div>
+      </section>
+      <section class="wow fadeOut" data-wow-duration="10s" data-wow-delay="3s">
+        <div class="container">
+          <div class="box"></div>
+        </div>
+      </section>
+      <section class="wow slideOutRight" data-wow-duration="2s" data-wow-delay="5s">
+        <div class="container">
+          <div class="box"></div>
+        </div>
+      </section>
+        
+      <section class="clock">
+        <div class="container">
+        <div id="demo"></div>
+        </div>
+      </section>
+
+    <!-- js links -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!-- plugin -->
+    <script src="assets/counter/waypoints.min.js"></script>
+    <script src="assets/counter/jquery.counterup.min.js"></script>
+    <script src="assets/WOW/js/wow.min.js"></script>
+    <script src="assets/Analog/jsRapClock.js"></script>
+    <!-- plugin -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      $(document).ready(function(){
+        // counterup
+          $('.counter').counterUp({
+          delay: 10,
+          time: 1000
+        });
+          // wowjs
+      });
+    </script>
+    <script>
+     wow = new WOW(
+     {
+      boxClass:     'wow',      // default
+      animateClass: 'animated', // default
+      offset:       0,          // default
+      mobile:       true,       // default
+      live:         true        // default
+      }
+        )
+     wow.init();
+    </script>
+    <script>
+      $(function(){
+      $('#demo').jsRapClock({
+        caption:'jQueryScript'
+
+        });
+    });
+
+    </script>
+  </body>
+</html>
